@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import Nav from './component/Nav/Nav'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//components
+  //Nav bar 
+  //title 
+  //update
+  //dish spotlight
+  //spotlight dish 
+  //social bar
+  //phone app bar
+  //story links (4 pack)
+  //contact links 
+  //legal stuff
 
+class App extends React.Component{
+  constructor(){
+    super();
+    this.state = {}
+  }
+  render(){
+    return(
+      <div>
+        <Nav/>
+      </div>
+    )
+  }
+}
 export default App;
